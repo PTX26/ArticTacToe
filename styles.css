@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f6fbff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.button-group button {
+  margin: 5px;
+  padding: 12px 22px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-group button.selected,
+.button-group button:hover {
+  background-color: #ffc107;
+  border-color: #ffa000;
+}
+
+.play-btn {
+  margin-top: 15px;
+  padding: 14px 26px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tic-tac-toe {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.tic-tac-toe .cell {
+  background: #e1f5fe;
+  padding: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  min-height: 80px;
+  position: relative;
+}
