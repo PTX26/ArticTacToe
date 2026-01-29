@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Articulation Tic‑Tac‑Toe</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Articulation Tic‑Tac‑Toe 🎯</h1>
+
+  <div class="student-section">
+    <input id="student-name" placeholder="Enter Student Name">
+  </div>
+
+  <div class="section">
+    <h3>Choose a Sound:</h3>
+    <div id="sound-buttons" class="button-group"></div>
+  </div>
+
+  <div class="section">
+    <h3>Where in the word?</h3>
+    <div id="position-buttons" class="button-group"></div>
+  </div>
+
+  <div class="section">
+    <h3>Display Mode:</h3>
+    <div id="mode-buttons" class="button-group">
+      <button data-mode="text">Text Only</button>
+      <button data-mode="textPic">Text + Picture</button>
+      <button data-mode="pic">Picture Only</button>
+    </div>
+  </div>
+
+  <button id="generate-board" class="play-btn">Start Game</button>
+  <button id="export-pdf" class="play-btn">Download PDF</button>
+
+  <div id="game-board" class="tic-tac-toe"></div>
+
+  <div id="scoreboard"></div>
+</div>
+
+<script src="app.js"></script>
+<script src="pdf-generator.js"></script>
+</body>
+</html>
